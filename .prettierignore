@@ -1,0 +1,4 @@
+src/components/Cryptos/Crypto.js
+src/components/Cryptos/CryptoList.js
+src/index.js
+src/redux/cryptos/cryptos.js
