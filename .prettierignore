@@ -6,3 +6,4 @@ src/components/Cryptos/CryptosContainer.js
 src/App.js
 src/index.js
 src/redux/cryptos/cryptos.js
+src/tests/Crypto.test.js

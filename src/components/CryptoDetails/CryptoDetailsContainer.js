@@ -15,7 +15,7 @@ export const CryptoDetailsContainer = () => {
     <div className="crypto-items">
       <div className="main-page-title-details">
         <a className="detail-page-home" href="/">
-          Home &gt;
+          &lt; Back
         </a>
         <h2 className="crypto-detail-main-title">Details</h2>
       </div>
