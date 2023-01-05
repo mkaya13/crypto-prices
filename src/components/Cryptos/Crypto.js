@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 export default function Crypto(props) {
   const { crypto } = props;
@@ -8,7 +9,7 @@ export default function Crypto(props) {
   } = crypto;
 
   return (
-    <a className="main-page-each-crypto" href={`detail/${id}`}>
+    <Link className="main-page-each-crypto" to={`/detail/${id}`}>
       <li>
         <div className="main-page-each-li-box">
           <img className="main-page-each-li-img" src={image} alt={image} />
@@ -31,7 +32,7 @@ export default function Crypto(props) {
           </div>
         </div>
       </li>
-    </a>
+    </Link>
   );
 }
 
