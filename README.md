@@ -164,6 +164,10 @@ Feel free to check the [issues page](https://github.com/ginabeki/space-traveller
 
 <!-- ACKNOWLEDGEMENTS -->
 
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank [Nelson Sakwa on Behance.](https://www.behance.net/sakwadesignstudio) for this inspiring design
+
 <!-- FAQ (optional) -->
 
 ## ❓ FAQ <a name="faq"></a>
