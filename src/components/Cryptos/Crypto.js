@@ -10,11 +10,15 @@ export default function Crypto(props) {
   return (
     <div>
       <li>
-        <h1>{id}</h1>
-        <h1>{symbol}</h1>
-        <h1>{name}</h1>
-        <h1>{image}</h1>
-        <h1>{currentPrice}</h1>
+        <a href={`/detail/${id}`}>
+          <div>
+            <h1>{id}</h1>
+            <h1>{symbol}</h1>
+            <h1>{name}</h1>
+            <h1>{image}</h1>
+            <h1>{currentPrice}</h1>
+          </div>
+        </a>
         <hr />
       </li>
     </div>
