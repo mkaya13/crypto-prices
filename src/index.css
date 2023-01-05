@@ -136,7 +136,7 @@ body {
 .main-page-title-details {
   display: flex;
   justify-content: center;
-  align-text: center;
+  text-align: center;
   background-color: #ce4177;
 }
 
