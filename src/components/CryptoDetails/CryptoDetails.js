@@ -10,8 +10,6 @@ export default function CryptoDetails(props) {
     circulatingSupply, totalSupply, maxSupply,
   } = crypto;
 
-  console.log(crypto);
-
   return (
     <div className="detail-page-all">
       <div className="detail-page-main">
