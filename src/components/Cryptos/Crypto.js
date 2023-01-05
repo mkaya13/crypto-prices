@@ -10,7 +10,7 @@ export default function Crypto(props) {
   console.log('Pathname:', window.location.pathname);
 
   return (
-    <a className="main-page-each-crypto" href={`${window.location.pathname}detail/${id}`}>
+    <a className="main-page-each-crypto" href={`https://crypto-market-4ovl.onrender.com/${window.location.pathname}detail/${id}`}>
       <li>
         <div className="main-page-each-li-box">
           <img className="main-page-each-li-img" src={image} alt={image} />
