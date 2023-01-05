@@ -8,7 +8,7 @@ export default function Crypto(props) {
   } = crypto;
 
   return (
-    <a className="main-page-each-crypto" href={`https://crypto-market-4ovl.onrender.com//detail/${id}`}>
+    <a className="main-page-each-crypto" href={`detail/${id}`}>
       <li>
         <div className="main-page-each-li-box">
           <img className="main-page-each-li-img" src={image} alt={image} />
