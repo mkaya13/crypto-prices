@@ -10,7 +10,7 @@ const App = () => (
   <Router>
     <Routes>
       <Route path="/" element={<CryptosContainer />} />
-      <Route path="/detail/:id" element={<CryptoDetailsContainer />}> </Route>
+      <Route path="https://crypto-market-4ovl.onrender.com/detail/:id" element={<CryptoDetailsContainer />}> </Route>
     </Routes>
   </Router>
 );
