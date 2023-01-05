@@ -6,7 +6,7 @@ export const CryptoList = (props) => {
   const { cryptos } = props;
 
   return (
-    <ul className="each-crypto-table">
+    <ul className="each-crypto-ul">
       {cryptos
         && cryptos.map((crypto) => <Crypto key={crypto.id} crypto={crypto} />)}
     </ul>

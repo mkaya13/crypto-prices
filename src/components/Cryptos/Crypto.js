@@ -8,19 +8,29 @@ export default function Crypto(props) {
   } = crypto;
 
   return (
-    <div>
+    <a className="main-page-each-crypto" href={`/detail/${id}`}>
       <li>
-        <a href={`/detail/${id}`}>
-          <div>
-            <h1>{id}</h1>
-            <h1>{symbol}</h1>
-            <h1>{name}</h1>
-            <h1>{image}</h1>
-            <h1>{currentPrice}</h1>
+        <div className="main-page-each-li-box">
+          <img className="main-page-each-li-img" src={image} alt={image} />
+          <div className="main-page-crypto-info">
+            <h2 className="main-page-each-li-detail">
+              <span className="detail-feature-tag">Name:</span>
+              &nbsp;
+              {name}
+            </h2>
+            <h2 className="main-page-each-li-detail">
+              <span className="detail-feature-tag">Symbol:</span>
+              &nbsp;
+              {symbol}
+            </h2>
+            <h2 className="main-page-each-li-detail">
+              <span className="detail-feature-tag">Price:</span>
+              &nbsp;
+              {currentPrice}
+            </h2>
           </div>
-        </a>
-        <hr />
+        </div>
       </li>
-    </div>
+    </a>
   );
 }

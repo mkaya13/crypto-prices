@@ -2,6 +2,7 @@ src/components/Cryptos/Crypto.js
 src/components/Cryptos/CryptoList.js
 src/components/CryptoDetails/CryptoDetails.js
 src/components/CryptoDetails/CryptoDetailsList.js
+src/components/Cryptos/CryptosContainer.js
 src/App.js
 src/index.js
 src/redux/cryptos/cryptos.js
