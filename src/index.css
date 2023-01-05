@@ -135,8 +135,8 @@ body {
 
 .main-page-title-details {
   display: flex;
-  justify-content: center;
-  text-align: center;
+  align-items: center;
+  align-content: center;
   background-color: #ce4177;
 }
 
@@ -145,6 +145,7 @@ body {
   justify-content: center;
   align-content: center;
   text-align: center;
+  padding-left: 40%;
   color: white;
 }
 
@@ -215,6 +216,12 @@ body {
 
 .detail-each-li:nth-child(even) {
   background-color: #ec4c8b;
+}
+
+.detail-page-home {
+  padding-left: 15px;
+  color: white;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
