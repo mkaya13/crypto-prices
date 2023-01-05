@@ -6,7 +6,7 @@ export default function CryptoDetails(props) {
   const { crypto } = props;
   const {
     name, image, currentPrice, symbol, marketCap, marketCapRank, totalVolume,
-    high24h, low24h, priceChange24h, marketCapChange24h,
+    high24h, low24h, priceChange24h, marketCapChange24h, marketCapChangePercentage24h,
     circulatingSupply, totalSupply, maxSupply,
   } = crypto;
 
@@ -58,8 +58,16 @@ export default function CryptoDetails(props) {
           <span>{priceChange24h}</span>
         </li>
         <li className="detail-each-li">
-          <span className="detail-feature-tag">Market Cap Change Percentage 24h:</span>
+          <span className="detail-feature-tag">Market Cap Change</span>
           <span>{marketCapChange24h}</span>
+        </li>
+        <li className="detail-each-li">
+          <span className="detail-feature-tag">Market Cap Change Percentage 24h:</span>
+          <span>
+            {marketCapChangePercentage24h}
+            {' '}
+            %
+          </span>
         </li>
         <li className="detail-each-li">
           <span className="detail-feature-tag">Circulating Supply:</span>
