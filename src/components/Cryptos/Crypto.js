@@ -7,6 +7,8 @@ export default function Crypto(props) {
     id, symbol, name, image, currentPrice,
   } = crypto;
 
+  console.log('Pathname:', window.location.pathname);
+
   return (
     <a className="main-page-each-crypto" href={`${window.location.pathname}detail/${id}`}>
       <li>
