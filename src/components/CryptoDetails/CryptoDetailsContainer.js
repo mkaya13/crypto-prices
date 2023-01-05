@@ -13,6 +13,9 @@ export const CryptoDetailsContainer = () => {
 
   return (
     <div className="crypto-items">
+      <div className="main-page-title-details">
+        <h2 className="crypto-detail-main-title">Details</h2>
+      </div>
       <CryptoDetailsList cryptos={cryptos} />
     </div>
   );

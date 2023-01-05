@@ -12,7 +12,7 @@ export const CryptoDetailsList = (props) => {
   const myChoose = [...cryptos.filter((crypto) => crypto.id === params.id)];
 
   return (
-    <ul className="each-crypto-table">
+    <ul className="each-crypto-detail-ul">
       {myChoose
         && myChoose.map((crypto) => (
           <CryptoDetails key={crypto.id} crypto={crypto} />

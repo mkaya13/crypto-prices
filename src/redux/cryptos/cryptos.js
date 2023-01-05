@@ -21,7 +21,7 @@ export const LoadCryptos = createAsyncThunk(GET_CRYPTOS, async () => {
     high24h: response.data[key].high_24h,
     low24h: response.data[key].low_24h,
     priceChange24h: response.data[key].price_change_24h,
-    priceChangePercentage_24h: response.data[key].price_change_percentage_24h,
+    priceChangePercentage24h: response.data[key].price_change_percentage_24h,
     marketCapChange24h: response.data[key].market_cap_change_24h,
     marketCapChangePercentage24h: response.data[key].market_cap_change_percentage_24h,
     circulatingSupply: response.data[key].circulating_supply,
