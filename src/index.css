@@ -34,6 +34,21 @@ body {
   padding: 2rem 2rem 2rem 2rem;
 }
 
+.main-title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem 0;
+}
+
+.search-field {
+  text-align: right;
+  color: white;
+}
+
 .all-cryptos-logo-img {
   width: 2rem;
   height: 2rem;
@@ -222,6 +237,20 @@ body {
   padding-left: 15px;
   color: white;
   text-decoration: none;
+}
+
+.USD {
+  color: #72bd39;
+}
+
+.footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40px;
+  background-color: #9400d3;
 }
 
 @media (max-width: 768px) {

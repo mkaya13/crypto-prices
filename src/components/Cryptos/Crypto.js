@@ -4,30 +4,29 @@ import { Link } from 'react-router-dom';
 
 export default function Crypto(props) {
   const { crypto } = props;
-  const {
-    id, symbol, name, image, currentPrice,
-  } = crypto;
 
   return (
-    <Link className="main-page-each-crypto" to={`/detail/${id}`}>
+    <Link className="main-page-each-crypto" to={`/detail/${crypto && crypto.id}`}>
       <li>
         <div className="main-page-each-li-box">
-          <img className="main-page-each-li-img" src={image} alt={image} />
+          <img className="main-page-each-li-img" src={crypto && crypto.image} alt={crypto && crypto.image} />
           <div className="main-page-crypto-info">
             <h2 className="main-page-each-li-detail">
               <span className="detail-feature-tag">Name:</span>
               &nbsp;
-              {name}
+              {crypto && crypto.name}
             </h2>
             <h2 className="main-page-each-li-detail">
               <span className="detail-feature-tag">Symbol:</span>
               &nbsp;
-              {symbol}
+              {crypto && crypto.symbol.toUpperCase()}
             </h2>
             <h2 className="main-page-each-li-detail">
               <span className="detail-feature-tag">Price:</span>
               &nbsp;
-              {currentPrice}
+              {crypto && crypto.currentPrice}
+              &nbsp;
+              <span className="USD">$</span>
             </h2>
           </div>
         </div>

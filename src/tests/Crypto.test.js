@@ -7,11 +7,13 @@ import Crypto from '../components/Cryptos/Crypto';
 
 import { store } from '../redux/configureStore';
 
-it('renders Details correctly', () => {
+it('Renders Crypto correctly', () => {
   const tree = renderer.create(
-    <BrowserRouter>
-      <Provider store={store}><Crypto /></Provider>
-    </BrowserRouter>,
+    <Provider store={store}>
+      <BrowserRouter>
+        <Crypto />
+      </BrowserRouter>
+    </Provider>,
   ).toJSON();
   expect(tree).toMatchSnapshot();
 });

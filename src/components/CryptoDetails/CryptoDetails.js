@@ -4,82 +4,79 @@ import '../../index.css';
 
 export default function CryptoDetails(props) {
   const { crypto } = props;
-  const {
-    name, image, currentPrice, symbol, marketCap, marketCapRank, totalVolume,
-    high24h, low24h, priceChange24h, marketCapChange24h, marketCapChangePercentage24h,
-    circulatingSupply, totalSupply, maxSupply,
-  } = crypto;
 
   return (
     <div className="detail-page-all">
       <div className="detail-page-main">
-        <img className="detail-page-crypto-logo" src={image} alt={image} />
+        <img className="detail-page-crypto-logo" src={crypto && crypto.image} alt={crypto && crypto.image} />
         <div className="detail-page-general-info">
           <h2 className="main-page-each-li-detail">
             <span className="detail-feature-tag">Name:</span>
               &nbsp;
-            {name}
+            {crypto && crypto.name}
           </h2>
           <h2 className="main-page-each-li-detail">
             <span className="detail-feature-tag">Symbol:</span>
               &nbsp;
-            {symbol}
+            {crypto && crypto.symbol}
           </h2>
           <h2 className="main-page-each-li-detail">
             <span className="detail-feature-tag">Price:</span>
-              &nbsp;
-            {currentPrice}
+            &nbsp;
+            {crypto && crypto.currentPrice}
+            &nbsp;
+            <span className="USD">$</span>
           </h2>
         </div>
       </div>
       <ul className="detail-ul">
         <li className="detail-each-li">
           <span className="detail-feature-tag">Market Cap:</span>
-          <span>{marketCap}</span>
+          <span>{crypto && crypto.marketCap}</span>
         </li>
         <li className="detail-each-li">
           <span className="detail-feature-tag">Market Cap Rank:</span>
-          <span>{marketCapRank}</span>
+          <span>{crypto && crypto.marketCapRank}</span>
         </li>
         <li className="detail-each-li">
           <span className="detail-feature-tag">Total Volume:</span>
-          <span>{totalVolume}</span>
+          <span>{crypto && crypto.totalVolume}</span>
         </li>
         <li className="detail-each-li">
           <span className="detail-feature-tag">Highest 24h:</span>
-          <span>{high24h}</span>
+          <span>{crypto && crypto.high24h}</span>
         </li>
         <li className="detail-each-li">
           <span className="detail-feature-tag">Lowest 24h</span>
-          <span>{low24h}</span>
+          <span>{crypto && crypto.low24h}</span>
         </li>
         <li className="detail-each-li">
           <span className="detail-feature-tag">Price Change 24h:</span>
-          <span>{priceChange24h}</span>
+          <span>{crypto && crypto.priceChange24h}</span>
         </li>
         <li className="detail-each-li">
           <span className="detail-feature-tag">Market Cap Change</span>
-          <span>{marketCapChange24h}</span>
+          <span>{crypto && crypto.marketCapChange24h}</span>
         </li>
         <li className="detail-each-li">
           <span className="detail-feature-tag">Market Cap Change Percentage 24h:</span>
           <span>
-            {marketCapChangePercentage24h}
+            {crypto && crypto.marketCapChangePercentage24h}
             {' '}
             %
           </span>
         </li>
         <li className="detail-each-li">
           <span className="detail-feature-tag">Circulating Supply:</span>
-          <span>{circulatingSupply}</span>
+          <span>{crypto && crypto.circulatingSupply}</span>
         </li>
         <li className="detail-each-li">
           <span className="detail-feature-tag">Total Supply:</span>
-          <span>{totalSupply}</span>
+          <span>{crypto && crypto.totalSupply}</span>
         </li>
         <li className="detail-each-li">
           <span className="detail-feature-tag">Max Supply:</span>
-          <span>{maxSupply}</span>
+          <span>{crypto && crypto.maxSupply}</span>
         </li>
       </ul>
     </div>
