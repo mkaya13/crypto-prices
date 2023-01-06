@@ -7,8 +7,6 @@ export const CryptoDetailsList = (props) => {
   const { cryptos } = props;
   const params = useParams();
 
-  console.log(params.id);
-
   const myChoose = [...cryptos.filter((crypto) => crypto.id === params.id)];
 
   return (

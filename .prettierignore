@@ -7,3 +7,5 @@ src/App.js
 src/index.js
 src/redux/cryptos/cryptos.js
 src/tests/Crypto.test.js
+src/tests/CryptoDetails.test.js
+src/components/Footer.js
