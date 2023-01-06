@@ -32,23 +32,23 @@ export default function CryptoDetails(props) {
       <ul className="detail-ul">
         <li className="detail-each-li">
           <span className="detail-feature-tag">Market Cap:</span>
-          <span>{crypto && crypto.marketCap}</span>
+          <span className="each-detail-info">{crypto && crypto.marketCap}</span>
         </li>
         <li className="detail-each-li">
           <span className="detail-feature-tag">Market Cap Rank:</span>
-          <span>{crypto && crypto.marketCapRank}</span>
+          <span className="each-detail-info">{crypto && crypto.marketCapRank}</span>
         </li>
         <li className="detail-each-li">
           <span className="detail-feature-tag">Total Volume:</span>
-          <span>{crypto && crypto.totalVolume}</span>
+          <span className="each-detail-info">{crypto && crypto.totalVolume}</span>
         </li>
         <li className="detail-each-li">
           <span className="detail-feature-tag">Highest 24h:</span>
-          <span>{crypto && crypto.high24h}</span>
+          <span className="each-detail-info">{crypto && crypto.high24h}</span>
         </li>
         <li className="detail-each-li">
           <span className="detail-feature-tag">Lowest 24h</span>
-          <span>{crypto && crypto.low24h}</span>
+          <span className="each-detail-info">{crypto && crypto.low24h}</span>
         </li>
         <li className="detail-each-li">
           <span className="detail-feature-tag">Price Change 24h:</span>
@@ -56,11 +56,11 @@ export default function CryptoDetails(props) {
         </li>
         <li className="detail-each-li">
           <span className="detail-feature-tag">Market Cap Change</span>
-          <span>{crypto && crypto.marketCapChange24h}</span>
+          <span className="each-detail-info">{crypto && crypto.marketCapChange24h}</span>
         </li>
         <li className="detail-each-li">
           <span className="detail-feature-tag">Market Cap Change Percentage 24h:</span>
-          <span>
+          <span className="each-detail-info">
             {crypto && crypto.marketCapChangePercentage24h}
             {' '}
             %
@@ -68,15 +68,15 @@ export default function CryptoDetails(props) {
         </li>
         <li className="detail-each-li">
           <span className="detail-feature-tag">Circulating Supply:</span>
-          <span>{crypto && crypto.circulatingSupply}</span>
+          <span className="each-detail-info">{crypto && crypto.circulatingSupply}</span>
         </li>
         <li className="detail-each-li">
           <span className="detail-feature-tag">Total Supply:</span>
-          <span>{crypto && crypto.totalSupply}</span>
+          <span className="each-detail-info">{crypto && crypto.totalSupply}</span>
         </li>
         <li className="detail-each-li">
           <span className="detail-feature-tag">Max Supply:</span>
-          <span>{crypto && crypto.maxSupply}</span>
+          <span className="each-detail-info">{crypto && crypto.maxSupply}</span>
         </li>
       </ul>
     </div>
