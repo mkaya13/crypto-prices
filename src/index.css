@@ -3,7 +3,7 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-  color: #f9f5f7;
+  color: black;
 }
 
 .root {
@@ -12,15 +12,19 @@ body {
   color: #f9f5f7;
 }
 
+.my-title {
+  color: black;
+}
+
 .all-content {
   height: 100%;
   width: 100%;
-  background-color: #ec4c8b;
+  background-color: #ffebcd;
   color: #f9f5f7;
 }
 
 .crypto-items {
-  background-color: #d9447f;
+  background-color: #f5f5dc;
 }
 
 .main-box {
@@ -97,18 +101,18 @@ body {
 .main-page-each-crypto {
   display: flex;
   width: 50%;
-  background-color: #ce4177;
+  background-color: #f5f5dc;
   padding: 10px 10px 10px 10px;
   text-decoration: none;
   color: #f9f5f7;
 }
 
 .main-page-each-crypto:nth-child(4n + 1) {
-  background-color: #d9447f;
+  background-color: #ffebcd;
 }
 
 .main-page-each-crypto:nth-child(4n) {
-  background-color: #d9447f;
+  background-color: #ffebcd;
 }
 
 .main-page-each-li-img {
@@ -129,7 +133,7 @@ body {
 
 .main-page-each-li-detail {
   font-size: 18px;
-  color: white;
+  color: #708090;
 }
 
 .detail-page-each-li-detail {
@@ -145,14 +149,16 @@ body {
 .prices-title {
   display: flex;
   justify-content: center;
-  background-color: #d9447f;
+  background-color: #f5f5dc;
+  color: black;
 }
 
 .main-page-title-details {
   display: flex;
   align-items: center;
   align-content: center;
-  background-color: #ce4177;
+  background-color: #ffebcd;
+  color: black;
 }
 
 .crypto-detail-main-title {
@@ -161,7 +167,7 @@ body {
   align-content: center;
   text-align: center;
   padding-left: 40%;
-  color: white;
+  color: black;
 }
 
 .details-page-each-li-img {
@@ -194,6 +200,7 @@ body {
   align-content: center;
   padding: 3rem 0 3rem 0;
   gap: 0 2rem;
+  background-color: #f5f5dc;
 }
 
 .detail-page-general-info {
@@ -225,17 +232,25 @@ body {
   padding-right: 3rem;
 }
 
+.each-detail-info {
+  color: #708090;
+}
+
+.detail-feature-tag {
+  color: black;
+}
+
 .detail-each-li:nth-child(odd) {
-  background-color: #ce4177;
+  background-color: #ffebcd;
 }
 
 .detail-each-li:nth-child(even) {
-  background-color: #ec4c8b;
+  background-color: #f5f5dc;
 }
 
 .detail-page-home {
   padding-left: 15px;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
