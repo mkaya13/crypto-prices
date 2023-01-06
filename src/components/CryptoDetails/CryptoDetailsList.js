@@ -7,12 +7,12 @@ export const CryptoDetailsList = (props) => {
   const { cryptos } = props;
   const params = useParams();
 
-  const myChoose = [...cryptos.filter((crypto) => crypto.id === params.id)];
+  const specificDetailToken = [...cryptos.filter((crypto) => crypto.id === params.id)];
 
   return (
     <ul className="each-crypto-detail-ul">
-      {myChoose
-        && myChoose.map((crypto) => (
+      {specificDetailToken
+        && specificDetailToken.map((crypto) => (
           <CryptoDetails key={crypto.id} crypto={crypto} />
         ))}
     </ul>
