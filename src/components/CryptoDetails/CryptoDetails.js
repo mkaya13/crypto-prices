@@ -11,17 +11,17 @@ export default function CryptoDetails(props) {
         <img className="detail-page-crypto-logo" src={crypto && crypto.image} alt={crypto && crypto.image} />
         <div className="detail-page-general-info">
           <h2 className="main-page-each-li-detail">
-            <span className="detail-feature-tag">Name:</span>
+            <span className="detail-feature-tag-title">Name:</span>
               &nbsp;
             {crypto && crypto.name}
           </h2>
           <h2 className="main-page-each-li-detail">
-            <span className="detail-feature-tag">Symbol:</span>
+            <span className="detail-feature-tag-title">Symbol:</span>
               &nbsp;
             {crypto && crypto.symbol}
           </h2>
           <h2 className="main-page-each-li-detail">
-            <span className="detail-feature-tag">Price:</span>
+            <span className="detail-feature-tag-title">Price:</span>
             &nbsp;
             {crypto && crypto.currentPrice}
             &nbsp;

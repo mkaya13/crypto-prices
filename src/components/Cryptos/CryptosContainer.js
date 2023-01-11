@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { CryptoList } from './CryptoList';
@@ -30,7 +31,7 @@ export const CryptosContainer = () => {
               type="text"
               onChange={(event) => setSearch(event.target.value)}
             />
-            <button type="button" onChange={(e) => setSearch(e.target.value)}>Search</button>
+            <button type="button" onChange={(e) => setSearch(e.target.value)}><i className="fas fa-search" /></button>
           </div>
         </div>
         <div className="crypto-logos">
