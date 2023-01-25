@@ -101,19 +101,10 @@ body {
   gap: 0 2rem;
 }
 
-.main-page-each-li-detail {
-  font-size: 1.25rem;
-  color: white;
-}
-
 .detail-page-each-li-detail {
   display: flex;
   width: 100%;
   font-size: 18px;
-}
-
-.detail-feature-tag {
-  color: #180000;
 }
 
 .detail-feature-tag-title {
@@ -122,11 +113,16 @@ body {
 
 .prices-title {
   display: flex;
+  flex-direction: row;
+  gap: 0 1rem;
   justify-content: center;
   align-items: center;
+  align-content: center;
   background-color: #0c2340;
   color: #0ab45b;
   height: 5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .main-page-title-details {
@@ -238,8 +234,83 @@ body {
   background-color: #1f75fe;
 }
 
-.button {
+.arrow-in-circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: cover;
   position: absolute;
+}
+
+.more-pages-ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  list-style: none;
+  gap: 0 1rem;
+  width: 100%;
+  height: 3rem;
+  background-color: white;
+  color: black;
+}
+
+.more-pages-li button {
+  border: none;
+  background-color: white;
+}
+
+.currency-in-terms-off {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 0.225rem;
+}
+
+.more-pages-li button:hover {
+  color: #0fff;
+  transition: 0.1s;
+}
+
+.more-pages-li button.active {
+  border-color: white;
+  background: #3861fb;
+  color: white;
+}
+
+.arrow-circle {
+  background: url('./images/arrow-in-circle.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+  border-radius: 100px;
+}
+
+.comments-icon {
+  background: url('./images/comment-icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0.2rem;
+}
+
+.main-page-each-crypto li {
+  width: 100%;
+  position: relative;
 }
 
 @media (max-width: 768px) {
@@ -279,6 +350,16 @@ body {
     height: 8rem;
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .main-page-each-li-detail {
+    font-size: 0.9rem;
+    color: white;
+  }
+
+  .detail-feature-tag {
+    color: #180000;
+    font-size: 0.9rem;
   }
 }
 
@@ -352,5 +433,15 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
+  }
+
+  .main-page-each-li-detail {
+    font-size: 1.1rem;
+    color: white;
+  }
+
+  .detail-feature-tag {
+    color: #180000;
+    font-size: 1.1rem;
   }
 }

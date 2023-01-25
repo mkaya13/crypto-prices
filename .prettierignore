@@ -9,3 +9,5 @@ src/redux/cryptos/cryptos.js
 src/tests/Crypto.test.js
 src/tests/CryptoDetails.test.js
 src/components/Footer.js
+src/components/Cryptos/CryptoPages.js
+scripts/getAndPostExample.js

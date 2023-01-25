@@ -4,9 +4,8 @@ import axios from 'axios';
 // ACTIONS
 const GET_CRYPTOS = 'crypto-prices/cryptos/GET_CRYPTOS';
 
-const cryptoAPI = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=USD';
-
-export const LoadCryptos = createAsyncThunk(GET_CRYPTOS, async () => {
+export const LoadCryptos = createAsyncThunk(GET_CRYPTOS, async (params) => {
+  const cryptoAPI = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${params.currency}&page=${params.page}`;
   const response = await axios.get(cryptoAPI);
   const cryptos = Object.keys(response.data).map((key) => ({
     id: response.data[key].id,
