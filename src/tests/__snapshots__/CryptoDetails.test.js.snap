@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders CryptoDetails correctly 1`] = `
+<div
+  className="detail-page-all"
+>
+  <div
+    className="detail-page-main"
+  >
+    <img
+      className="detail-page-crypto-logo"
+    />
+    <div
+      className="detail-page-general-info"
+    >
+      <h2
+        className="main-page-each-li-detail"
+      >
+        <span
+          className="detail-feature-tag"
+        >
+          Name:
+        </span>
+         
+      </h2>
+      <h2
+        className="main-page-each-li-detail"
+      >
+        <span
+          className="detail-feature-tag"
+        >
+          Symbol:
+        </span>
+         
+      </h2>
+      <h2
+        className="main-page-each-li-detail"
+      >
+        <span
+          className="detail-feature-tag"
+        >
+          Price:
+        </span>
+         
+         
+        <span
+          className="USD"
+        >
+          $
+        </span>
+      </h2>
+    </div>
+  </div>
+  <ul
+    className="detail-ul"
+  >
+    <li
+      className="detail-each-li"
+    >
+      <span
+        className="detail-feature-tag"
+      >
+        Market Cap:
+      </span>
+      <span />
+    </li>
+    <li
+      className="detail-each-li"
+    >
+      <span
+        className="detail-feature-tag"
+      >
+        Market Cap Rank:
+      </span>
+      <span />
+    </li>
+    <li
+      className="detail-each-li"
+    >
+      <span
+        className="detail-feature-tag"
+      >
+        Total Volume:
+      </span>
+      <span />
+    </li>
+    <li
+      className="detail-each-li"
+    >
+      <span
+        className="detail-feature-tag"
+      >
+        Highest 24h:
+      </span>
+      <span />
+    </li>
+    <li
+      className="detail-each-li"
+    >
+      <span
+        className="detail-feature-tag"
+      >
+        Lowest 24h
+      </span>
+      <span />
+    </li>
+    <li
+      className="detail-each-li"
+    >
+      <span
+        className="detail-feature-tag"
+      >
+        Price Change 24h:
+      </span>
+      <span />
+    </li>
+    <li
+      className="detail-each-li"
+    >
+      <span
+        className="detail-feature-tag"
+      >
+        Market Cap Change
+      </span>
+      <span />
+    </li>
+    <li
+      className="detail-each-li"
+    >
+      <span
+        className="detail-feature-tag"
+      >
+        Market Cap Change Percentage 24h:
+      </span>
+      <span>
+         
+        %
+      </span>
+    </li>
+    <li
+      className="detail-each-li"
+    >
+      <span
+        className="detail-feature-tag"
+      >
+        Circulating Supply:
+      </span>
+      <span />
+    </li>
+    <li
+      className="detail-each-li"
+    >
+      <span
+        className="detail-feature-tag"
+      >
+        Total Supply:
+      </span>
+      <span />
+    </li>
+    <li
+      className="detail-each-li"
+    >
+      <span
+        className="detail-feature-tag"
+      >
+        Max Supply:
+      </span>
+      <span />
+    </li>
+  </ul>
+</div>
+`;
