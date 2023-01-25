@@ -18,7 +18,7 @@ export default function CryptoDetails(props) {
           <h2 className="main-page-each-li-detail">
             <span className="detail-feature-tag-title">Symbol:</span>
               &nbsp;
-            {crypto && crypto.symbol}
+            {crypto && crypto.symbol.toUpperCase()}
           </h2>
           <h2 className="main-page-each-li-detail">
             <span className="detail-feature-tag-title">Price:</span>

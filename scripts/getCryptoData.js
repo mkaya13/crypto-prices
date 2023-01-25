@@ -1,26 +1,15 @@
-import fetch from 'node-fetch';
+import axios from 'axios';
 
-// dotenv.config();
+const config = {
+  method: 'get',
+  url: 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=USD',
+  headers: {},
+};
 
-// const BASE_COMMENTS_API = process.env.BASE_COMMENTS_API || "";
-// const APP_ENDPOINT_ID = process.env.APP_ENDPOINT_ID || "";
-
-const API_PATH = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=USD';
-
-const fetchData = async () => {
-  const fetchedData = fetch(API_PATH, {
-    method: 'GET',
-    headers: { 'Content-Type': 'application/json' },
+axios(config)
+  .then((response) => {
+    console.log(JSON.stringify(response.data));
   })
-    .then((response) => response.json())
-    .catch((error) => error);
-
-  return fetchedData;
-};
-
-const returnScoreData = async () => {
-  const responseData = await fetchData();
-  console.log(responseData);
-};
-
-returnScoreData();
+  .catch((error) => {
+    console.log(error);
+  });
