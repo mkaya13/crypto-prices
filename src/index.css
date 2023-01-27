@@ -19,7 +19,6 @@ body {
 .all-content {
   height: 100%;
   width: 100%;
-  background-color: #a3c1ad;
   color: #f9f5f7;
 }
 
@@ -45,8 +44,8 @@ body {
 }
 
 .all-cryptos-logo-img {
-  width: 2rem;
-  height: 2rem;
+  width: 1.75rem;
+  height: 1.75rem;
 }
 
 .crypto-logos {
