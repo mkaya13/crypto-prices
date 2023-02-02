@@ -36,7 +36,6 @@ export const CryptosContainer = () => {
   return (
     <div className="all-content">
       <Announcements />
-      <GetAllCommentsCounts />
       <div className="main-box">
         <div className="main-title">
           <h1 className="my-title">
