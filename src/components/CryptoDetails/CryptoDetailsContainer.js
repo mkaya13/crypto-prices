@@ -4,7 +4,7 @@ import { CryptoDetailsList } from './CryptoDetailsList';
 import { LoadCryptos } from '../../redux/cryptos/cryptos';
 
 export const CryptoDetailsContainer = () => {
-  const cryptos = useSelector((state) => state.cryptos);
+  const cryptos = useSelector((state) => state.cryptos.cryptos);
   const dispatch = useDispatch();
 
   useEffect(() => {

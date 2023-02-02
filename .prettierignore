@@ -11,3 +11,10 @@ src/tests/CryptoDetails.test.js
 src/components/Footer.js
 src/components/Cryptos/CryptoPages.js
 scripts/getAndPostExample.js
+scripts/getCommentById.js
+scripts/getAllComments.js
+scripts/deneme.js
+src/redux/comments/commentsById.js
+src/components/Comments/FetchCommentsWithRespectToId.js
+src/components/Comments/CommentsById.js
+src/components/Comments/GetAllCommentsCounts.js
