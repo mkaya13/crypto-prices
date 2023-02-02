@@ -5,7 +5,6 @@ import { CryptoList } from './CryptoList';
 import { LoadCryptos } from '../../redux/cryptos/cryptos';
 import { Footer } from '../Footer';
 import { CryptoPages } from './CryptoPages';
-import { GetAllCommentsCounts } from '../Comments/GetAllCommentsCounts';
 import ScrollToTop from './ScrollToTop';
 import Announcements from '../Announcements/Announcements';
 import '../../index.css';
