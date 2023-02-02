@@ -5,35 +5,19 @@ import { CryptoList } from './CryptoList';
 import { LoadCryptos } from '../../redux/cryptos/cryptos';
 import { Footer } from '../Footer';
 import { CryptoPages } from './CryptoPages';
+import { GetAllCommentsCounts } from '../Comments/GetAllCommentsCounts';
 import ScrollToTop from './ScrollToTop';
+import Announcements from '../Announcements/Announcements';
 import '../../index.css';
 
 export const CryptosContainer = () => {
-  const cryptos = useSelector((state) => state.cryptos);
+  const cryptos = useSelector((state) => state.cryptos.cryptos);
   const dispatch = useDispatch();
 
   const [search, setSearch] = useState('');
   const [currentPage, setCurrentPage] = useState('1');
   const [currentCurrency, setCurrenctCurrency] = useState('USD');
   const [params, setParams] = useState({ currency: currentCurrency, page: currentPage });
-
-  const postComments = async (API_PATH) => {
-    const fetchedData = await fetch(API_PATH, {
-      method: 'POST',
-      body: JSON.stringify({
-        id: 'Btc',
-        username: 'Mert',
-        comment: 'Bull run is coming!',
-      }),
-    })
-      .then((response) => response.json())
-      .catch((error) => error);
-    return fetchedData;
-  };
-  const postResp = postComments('https://eu-central-1.aws.data.mongodb-api.com/app/crypto-market-comments-api-ksvhg/endpoint/createcomment');
-  console.log('Post response:', postResp);
-
-  // ABOVE API CALLS
 
   const paginate = (pageNumber) => {
     setCurrentPage(pageNumber);
@@ -51,6 +35,8 @@ export const CryptosContainer = () => {
 
   return (
     <div className="all-content">
+      <Announcements />
+      <GetAllCommentsCounts />
       <div className="main-box">
         <div className="main-title">
           <h1 className="my-title">
@@ -70,12 +56,14 @@ export const CryptosContainer = () => {
         <div className="crypto-logos">
           {cryptos
             && cryptos.map((crypto) => (
-              <img
-                className="all-cryptos-logo-img"
-                key={crypto.id}
-                src={crypto.image}
-                alt={crypto.image}
-              />
+              <a key={crypto.id} href={crypto.id}>
+                <img
+                  className="all-cryptos-logo-img"
+                  key={crypto.id}
+                  src={crypto.image}
+                  alt={crypto.image}
+                />
+              </a>
             ))}
         </div>
       </div>

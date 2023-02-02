@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
@@ -6,12 +7,17 @@ import '../../index.css';
 export default function Crypto(props) {
   const { crypto, currentCurrency } = props;
 
-  // const managePricePercentageChange = (pricePercentage) => {
-  //   pricePercentage > 0 ?
-  // }
+  // const aCommentButtonClicked = () => {
+  //   document.querySelectorAll('.comments-icon').forEach((commentButton) => {
+  //     commentButton.addEventListener('click', async (event) => {
+  //       console.log(commentButton.id);
+  //       event.preventDefault();
+  //     });
+  //   });
+  // };
 
   return (
-    <Link className="main-page-each-crypto" to={`/detail/${crypto && crypto.id}`}>
+    <div className="main-page-each-crypto">
       <li>
         <div className="main-page-each-li-box">
           <img className="main-page-each-li-img" src={crypto && crypto.image} alt={crypto && crypto.image} />
@@ -50,11 +56,13 @@ export default function Crypto(props) {
               {crypto && crypto.marketCapRank}
             </h2>
           </div>
-          <div className="arrow-circle" />
-          <div className="comments-icon" />
+          <Link to={`/detail/${crypto && crypto.id}`} id={crypto.id}>
+            <div className="arrow-circle" />
+          </Link>
+          <div className="comments-icon" id={`comments-${crypto.id}`}></div>
         </div>
       </li>
-    </Link>
+    </div>
   );
 }
 
