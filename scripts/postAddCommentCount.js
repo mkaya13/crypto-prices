@@ -1,7 +1,6 @@
 import fetch from 'node-fetch';
 
-const POST_A_COMMENT_COUNT_ENDPONT =
-  'https://eu-central-1.aws.data.mongodb-api.com/app/crypto-market-comments-api-ksvhg/endpoint/addcommentcount';
+const POST_A_COMMENT_COUNT_ENDPONT = 'https://eu-central-1.aws.data.mongodb-api.com/app/crypto-market-comments-api-ksvhg/endpoint/addcommentcount';
 
 const response = fetch(POST_A_COMMENT_COUNT_ENDPONT, {
   method: 'POST',

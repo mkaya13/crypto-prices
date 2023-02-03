@@ -5,7 +5,6 @@ import { CryptoList } from './CryptoList';
 import { LoadCryptos } from '../../redux/cryptos/cryptos';
 import { Footer } from '../Footer';
 import { CryptoPages } from './CryptoPages';
-import { GetAllCommentsCounts } from '../Comments/GetAllCommentsCounts';
 import ScrollToTop from './ScrollToTop';
 import Announcements from '../Announcements/Announcements';
 import '../../index.css';
@@ -36,7 +35,6 @@ export const CryptosContainer = () => {
   return (
     <div className="all-content">
       <Announcements />
-      <GetAllCommentsCounts />
       <div className="main-box">
         <div className="main-title">
           <h1 className="my-title">

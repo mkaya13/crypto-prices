@@ -13,7 +13,12 @@ src/components/Cryptos/CryptoPages.js
 scripts/getAndPostExample.js
 scripts/getCommentById.js
 scripts/getAllComments.js
-scripts/deneme.js
+scripts/getAllCommentsCounts.js
+scripts/getCommentsById.js
+scripts/postAComment.js
+scripts/postAddCommentCount.js
+scripts/postDeleteAllCommentsCounts.js
+scripts/postDeleteComments.js
 src/redux/comments/commentsById.js
 src/components/Comments/FetchCommentsWithRespectToId.js
 src/components/Comments/CommentsById.js

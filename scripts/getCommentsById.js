@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-const COMMENTS_ENDPOINT_QUERY_ID =
-  'https://eu-central-1.aws.data.mongodb-api.com/app/crypto-market-comments-api-ksvhg/endpoint/getcommentsbyid?id=ethereum';
+const COMMENTS_ENDPOINT_QUERY_ID = 'https://eu-central-1.aws.data.mongodb-api.com/app/crypto-market-comments-api-ksvhg/endpoint/getcommentsbyid?id=ethereum';
 
 const response = axios(COMMENTS_ENDPOINT_QUERY_ID, {
   method: 'GET',

@@ -59,7 +59,7 @@ export default function Crypto(props) {
           <Link to={`/detail/${crypto && crypto.id}`} id={crypto.id}>
             <div className="arrow-circle" />
           </Link>
-          <div className="comments-icon" id={`comments-${crypto.id}`}></div>
+          <div className="comments-icon" id={`comments-${crypto.id}`} />
         </div>
       </li>
     </div>
