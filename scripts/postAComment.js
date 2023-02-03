@@ -1,7 +1,6 @@
 import fetch from 'node-fetch';
 
-const POST_A_COMMENT_ENDPONT =
-  'https://eu-central-1.aws.data.mongodb-api.com/app/crypto-market-comments-api-ksvhg/endpoint/createcomment';
+const POST_A_COMMENT_ENDPONT = 'https://eu-central-1.aws.data.mongodb-api.com/app/crypto-market-comments-api-ksvhg/endpoint/createcomment';
 
 const response = fetch(POST_A_COMMENT_ENDPONT, {
   method: 'POST',

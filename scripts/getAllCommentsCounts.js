@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-const ALL_COMMENTS_COUNTS_ENDPOINT =
-  'https://eu-central-1.aws.data.mongodb-api.com/app/crypto-market-comments-api-ksvhg/endpoint/commentcounts';
+const ALL_COMMENTS_COUNTS_ENDPOINT = 'https://eu-central-1.aws.data.mongodb-api.com/app/crypto-market-comments-api-ksvhg/endpoint/commentcounts';
 
 const response = axios(ALL_COMMENTS_COUNTS_ENDPOINT, {
   method: 'GET',

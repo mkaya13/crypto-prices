@@ -303,7 +303,6 @@ body {
 
   .more-pages-ul {
     margin: 0;
-    padding: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -333,7 +332,6 @@ body {
     background-color: #f5f5dc;
     padding: 10px 10px 10px 10px;
     text-decoration: none;
-    background-color: #fc766a;
   }
 
   .main-page-each-li-img {
