@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.069aed71.css",
+    "main.js": "/static/js/main.f04d1546.js",
+    "static/media/logo.png": "/static/media/logo.6edf461a34d85055b8c4.png",
+    "static/media/arrow-in-circle.png": "/static/media/arrow-in-circle.4f30f7a13bd2c51a89e3.png",
+    "static/media/USA-flag.svg": "/static/media/USA-flag.714d37db90ca5f74468b83bec078a04a.svg",
+    "static/media/comment-icon.svg": "/static/media/comment-icon.8f086c8e5f0e07d40991.svg",
+    "index.html": "/index.html",
+    "main.069aed71.css.map": "/static/css/main.069aed71.css.map",
+    "main.f04d1546.js.map": "/static/js/main.f04d1546.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.069aed71.css",
+    "static/js/main.f04d1546.js"
+  ]
+}
