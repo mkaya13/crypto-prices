@@ -50,14 +50,14 @@ const Navbar = () => {
   return (
     <nav>
       <div className="logo-and-toggle">
-        <span className="logo-img">
-          <img src={logo} alt="" />
-        </span>
         <div className="toggle-button" onClick={() => clickToggleButton()}>
           <span className="bar" />
           <span className="bar" />
           <span className="bar" />
         </div>
+        <span className="logo-img">
+          <img src={logo} alt="" />
+        </span>
       </div>
 
       <ul className="nav-list">
