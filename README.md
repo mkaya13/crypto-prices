@@ -26,7 +26,8 @@
 
 # 📖 Crypto Market <a name="about-project"></a>
 
-> Crypto Market is a website that shows crypto currency general and detail data.
+> Crypto Market is a web application that shows Real time crypto market data for all blockchains and their utility tokens.
+> It the near future, it will include many Smart Contracts functionalities, an utility token and many other functionalities!
 
 ## 🛠 Built With <a name="built-with"></a>
 
