@@ -5,7 +5,7 @@ const DELETE_ALL_COMMENTS_ENDPOINT = 'https://eu-central-1.aws.data.mongodb-api.
 const response = fetch(DELETE_ALL_COMMENTS_ENDPOINT, {
   method: 'POST',
   body: JSON.stringify({
-    id: 'bitcoin',
+    id: 'ethereum',
   }),
 })
   .then((response) => response)
