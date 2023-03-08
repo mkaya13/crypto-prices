@@ -65,8 +65,6 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://crypto-market-392l.onrender.com/)
-  <br />
-- [Presentation Video Link](https://drive.google.com/file/d/1eDwYUvVIsYymYV1q-auCJych7L9ErHrx/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
